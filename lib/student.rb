@@ -31,7 +31,9 @@ class Student
   end
   
   def create(name:, grade:)
-    Student.new(name, grade)
+    kid = Student.new(name, grade)
+    kid.save
+    kid
   end
   
 end
